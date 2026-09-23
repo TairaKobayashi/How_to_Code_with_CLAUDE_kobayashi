@@ -7,6 +7,5 @@ uv.lock
 results/figures/*.png
 results/figures/*.pdf
 
-# 講義資料は git 管理外
-*.pdf
+# 講義資料の編集元ファイルは git 管理外(配布は PDF のみ)
 *.pptx
