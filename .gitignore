@@ -6,3 +6,7 @@ __pycache__/
 uv.lock
 results/figures/*.png
 results/figures/*.pdf
+
+# 講義資料は git 管理外
+*.pdf
+*.pptx
