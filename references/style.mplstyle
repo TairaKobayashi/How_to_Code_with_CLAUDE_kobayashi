@@ -1,0 +1,37 @@
+# 研究室 論文投稿用 matplotlib スタイル
+# 使い方: plt.style.use("references/style.mplstyle")
+# 図サイズの目安: 1 段組 85 mm 幅 (3.35 in) / 2 段組 175 mm 幅 (6.89 in)
+
+# --- フォント ---
+font.family        : sans-serif
+font.sans-serif    : Arial, Helvetica, DejaVu Sans
+font.size          : 8
+axes.titlesize     : 8
+axes.labelsize     : 8
+xtick.labelsize    : 7
+ytick.labelsize    : 7
+legend.fontsize    : 7
+
+# --- 線・マーカー ---
+lines.linewidth    : 1.0
+lines.markersize   : 4
+axes.linewidth     : 0.8
+xtick.major.width  : 0.8
+ytick.major.width  : 0.8
+
+# --- カラー (Okabe–Ito colorblind-safe パレット / tab10 は使わない) ---
+# 青, 朱, 緑, 紫, 橙, 空色, 黄 の順で固定
+axes.prop_cycle    : cycler("color", ["0072B2", "D55E00", "009E73", "CC79A7", "E69F00", "56B4E9", "F0E442"])
+
+# --- 図の体裁 ---
+figure.figsize     : 3.35, 2.5
+figure.dpi         : 100
+axes.spines.top    : False
+axes.spines.right  : False
+axes.grid          : False
+legend.frameon     : False
+
+# --- 保存 (PDF と PNG 300 dpi の両方で results/figures/ へ) ---
+savefig.dpi        : 300
+savefig.bbox       : tight
+pdf.fonttype       : 42
