@@ -1,0 +1,22 @@
+[project]
+name = "sample-analysis"
+version = "0.1.0"
+description = "Claude Code ハンズオン用の最小解析プロジェクト"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0",
+    "matplotlib>=3.8",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
