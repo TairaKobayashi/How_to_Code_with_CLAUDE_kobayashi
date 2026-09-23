@@ -8,12 +8,17 @@ Claude Code ハンズオン用の最小解析プロジェクトです(生体情�
 ## 構成
 
 ```
-load_data.py            # CSV 読み込み
-stats.py                # 群ごとの集計 → results/summary.csv
-tests/test_load.py      # pytest
-data/raw/subjects.csv   # 生データ(読み取り専用・変更禁止)
-results/                # 出力先(summary.csv, figures/)
+load_data.py                 # CSV 読み込み
+stats.py                     # 群ごとの集計 → results/summary.csv
+tests/test_load.py           # pytest
+data/raw/subjects.csv        # 生データ(読み取り専用・変更禁止)
+results/                     # 出力先(summary.csv, figures/)
+references/style.mplstyle    # 論文投稿用の図スタイル(ハンズオン③で使用)
 ```
+
+> **Note:** `references/style.mplstyle` は本ハンズオンの都合でリポジトリ直下に
+> 置いています。実際の研究室運用では Skill と一緒に
+> `.claude/skills/plot-style/references/` 配下に置くのが推奨です。
 
 ## セットアップと実行
 
